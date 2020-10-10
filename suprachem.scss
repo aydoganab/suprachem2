@@ -1,0 +1,85 @@
+
+//required bs
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $teal;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "warning": $warning
+);
+
+$enable-rounded: true;
+
+$link-color: darken($primary, 15%);
+$link-decoration: none;
+$link-hover-color: darken($danger, 15%);
+
+$navbar-dark-color: $gray-400;
+$navbar-dark-hover-color: $yellow;
+$navbar-dark-toggler-border-color: $gray-300;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-padding-x: 0;
+
+//optional bs
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/helpers";
+@import "node_modules/bootstrap/scss/utilities/api";
+
+html, body {
+  background: url('img/cover.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100% !important;
+}
+
+//navbar
+.nbsc {
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  @extend .bg-transparent;
+  @extend .px-md-5;
+}
+
+.page-header {
+  @extend .text-warning;
+  @extend .text-center;
+  @extend .py-4;
+  @extend .mt-5;
+}
+
+.card {
+  @extend .card;
+  margin-bottom: 2rem;
+}
+
+.card-body-member {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .flex-md-row;
+  @extend .text-center;
+  @extend .text-md-left;
+  @extend .align-items-center;
+}
