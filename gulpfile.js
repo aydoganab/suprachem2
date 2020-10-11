@@ -8,14 +8,20 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     minify=require('@node-minify/core'),
     terser=require('@node-minify/terser'),
+    purgecss=require('gulp-purgecss'),
     browserSync = require('browser-sync').create();
 
 let classList = require('./src/class_replace');
 
 let js_objects = [
     //'node_modules/bootstrap/js/src/util/index.js',
-    //'node_modules/bootstrap/js/src/collapse.js',
-    'node_modules/bootstrap/dist/js/bootstrap.js',
+    //'node_modules/bootstrap/js/dist/dom/data.js',
+    //'node_modules/bootstrap/js/dist/dom/event-handler.js',
+    //'node_modules/bootstrap/js/dist/dom/manipulator.js',
+    //'node_modules/bootstrap/js/dist/dom/polyfill.js',
+    //'node_modules/bootstrap/js/dist/dom/selector-engine.js',
+    //'node_modules/bootstrap/js/dist/collapse.js',
+    //'node_modules/bootstrap/dist/js/bootstrap.min.js',
 ];
 
 gulp.task('pug', function () {
@@ -31,7 +37,7 @@ gulp.task('sass', function () {
     return gulp.src('suprachem.scss')
         .pipe(sass())
         .pipe(autoprefixer({browserlist: [">= 1%", "last 1 major version", "not dead", "Chrome >= 60", "Firefox >= 60", "Edge >= 16", "iOS >= 10", "Safari >= 10", "Android >= 6", "not Explorer <= 11"]}))
-        .pipe(rename("suprachem.css"))
+        .pipe(rename("suprachemraw.css"))
         .pipe(gulp.dest("builds/development"))
 });
 
@@ -66,6 +72,15 @@ gulp.task('distJS', function () {
             compress: false
         }
     });
+});
+
+gulp.task('purgeCSS', function (){
+    return gulp.src('builds/development/*.css')
+        .pipe(purgecss({
+            content: ['builds/development/*.html']
+        }))
+        .pipe(rename('suprachem.css'))
+        .pipe(gulp.dest('builds/assets'))
 });
 
 

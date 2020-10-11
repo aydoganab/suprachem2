@@ -5,33 +5,11 @@
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/utilities";
 
-$primary: $blue;
-$secondary: $gray-600;
-$success: $teal;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-800;
+$theme-colors: map-remove($theme-colors, "info", "light", "dark", "danger", "warning");
 
-$theme-colors: (
-        "primary": $primary,
-        "secondary": $secondary,
-        "success": $success,
-        "warning": $warning
-);
-
-$enable-rounded: true;
-
-$link-color: darken($primary, 15%);
+$nav-link-color: $gray-300;
+$nav-link-hover-color: $yellow;
 $link-decoration: none;
-$link-hover-color: darken($danger, 15%);
-
-$navbar-dark-color: $gray-400;
-$navbar-dark-hover-color: $yellow;
-$navbar-dark-toggler-border-color: $gray-300;
-$navbar-nav-link-padding-x: 1rem;
-$navbar-padding-x: 0;
 
 //optional bs
 @import "node_modules/bootstrap/scss/root";
@@ -40,7 +18,7 @@ $navbar-padding-x: 0;
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/containers";
 @import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/helpers";
 @import "node_modules/bootstrap/scss/utilities/api";
@@ -54,19 +32,10 @@ html, body {
   min-height: 100% !important;
 }
 
-//navbar
-.nbsc {
-  @extend .navbar;
-  @extend .navbar-expand-lg;
-  @extend .navbar-dark;
-  @extend .bg-transparent;
-  @extend .px-md-5;
-}
-
 .page-header {
-  @extend .text-warning;
+  color: $yellow;
   @extend .text-center;
-  @extend .py-4;
+  @extend .py-5;
   @extend .mt-5;
 }
 
