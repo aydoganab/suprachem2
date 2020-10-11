@@ -13,17 +13,6 @@ let gulp = require('gulp'),
 
 let classList = require('./src/class_replace');
 
-let js_objects = [
-    //'node_modules/bootstrap/js/src/util/index.js',
-    //'node_modules/bootstrap/js/dist/dom/data.js',
-    //'node_modules/bootstrap/js/dist/dom/event-handler.js',
-    //'node_modules/bootstrap/js/dist/dom/manipulator.js',
-    //'node_modules/bootstrap/js/dist/dom/polyfill.js',
-    //'node_modules/bootstrap/js/dist/dom/selector-engine.js',
-    //'node_modules/bootstrap/js/dist/collapse.js',
-    //'node_modules/bootstrap/dist/js/bootstrap.min.js',
-];
-
 gulp.task('pug', function () {
     return gulp.src('src/*pug')
         .pipe(pug({
@@ -54,26 +43,6 @@ gulp.task('classReplaceCss', function () {
         .pipe(gulp.dest("builds/dist"))
 });
 
-gulp.task('combineJS', function () {
-    return gulp.src(js_objects)
-        .pipe(concat('suprachem.js'))
-        .pipe(gulp.dest('builds/development'))
-});
-
-gulp.task('distJS', function () {
-    return minify({
-        compressor: terser,
-        input:'builds/development/suprachem.js',
-        output:'builds/dist/suprachem.js',
-        options:{
-            warnings: true, // pass true to display compressor warnings.
-            mangle: false, // pass false to skip mangling names.
-            output: {}, // pass an object if you wish to specify additional output options. The defaults are optimized for best compression.
-            compress: false
-        }
-    });
-});
-
 gulp.task('purgeCSS', function (){
     return gulp.src('builds/development/*.css')
         .pipe(purgecss({
@@ -99,4 +68,4 @@ gulp.task('classReplace', gulp.series('classReplaceHtml', 'classReplaceCss'));
 //pug and html class replace
 gulp.task('noSassNoJs', gulp.series('pug', 'classReplaceHtml'));
 
-gulp.task('default', gulp.series('sass','pug','classReplaceHtml', 'classReplaceCss', 'combineJS', 'distJS'));
+gulp.task('default', gulp.series('sass','pug','classReplaceHtml', 'classReplaceCss'));
