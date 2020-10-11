@@ -21,6 +21,21 @@
         <div class="col-md-8" id="pubs"></div>
       </div>
     </div>
-    <script>$.getJSON("publications.json").done(function(a){let t="";$.each(a,function(a,s){t+='<div class="card card-pub" data-year="'+s.year+'"><div class="card-body"><h5 class="card-title">'+s.title+'</h5><h6 class="card-subtitle text-muted">'+s.authors+'</h6><p class="card-text"><i>'+s.journal+"</i><strong> "+s.year+"</strong>",""!=s.volume&&(t+="<i>, "+s.volume+"</i>"),""!=s.pages&&(t+=" ,"+s.pages),t+="</p>",""!=s.image&&(t+='<div class="text-center mb-3"><img src="'+s.image+'" class="img-fluid"></div>'),""!=s.abstract&&(t+='<p class="card-text">'+s.abstract+"</p>"),t+='<a href="https://doi.org/'+s.doi+'" target="_blank">DOI: '+s.doi+"</a></div></div>"}),$("#pubs").append(t)});</script>
+    <script>
+      let xhr = new XMLHttpRequest();
+      xhr.onload = function () {
+          let pupdata = JSON.parse(xhr.responseText);
+          let t = "";
+          for (let i = 0; i < pupdata.length; i++) {
+              let s=pupdata[i];
+              t += '<div class="card card-pub" data-year="' + s.year + '"><div class="card-body"><h5 class="card-title">' + s.title + '</h5><h6 class="card-subtitle text-muted">' + s.authors + '</h6><p class="card-text"><i>' + s.journal + "</i><strong> " + s.year + "</strong>", "" != s.volume && (t += "<i>, " + s.volume + "</i>"), "" != s.pages && (t += " ," + s.pages), t += "</p>", "" != s.image && (t += '<div class="text-center mb-3"><img src="' + s.image + '" class="img-fluid" style="max-height: 250px"></div>'), "" != s.abstract && (t += '<p class="card-text">' + s.abstract + "</p>"), t += '<a href="https://doi.org/' + s.doi + '" target="_blank">DOI: ' + s.doi + "</a></div></div>";
+          }
+          document.getElementById('pubs').innerHTML = t;
+      };
+      xhr.open('GET', 'publications.json', true);
+      xhr.send();
+      
+      //$.getJSON("publications.json").done(function(a){let t="";$.each(a,function(a,s){t+='<div class="card card-pub" data-year="'+s.year+'"><div class="card-body"><h5 class="card-title">'+s.title+'</h5><h6 class="card-subtitle text-muted">'+s.authors+'</h6><p class="card-text"><i>'+s.journal+"</i><strong> "+s.year+"</strong>",""!=s.volume&&(t+="<i>, "+s.volume+"</i>"),""!=s.pages&&(t+=" ,"+s.pages),t+="</p>",""!=s.image&&(t+='<div class="text-center mb-3"><img src="'+s.image+'" class="img-fluid"></div>'),""!=s.abstract&&(t+='<p class="card-text">'+s.abstract+"</p>"),t+='<a href="https://doi.org/'+s.doi+'" target="_blank">DOI: '+s.doi+"</a></div></div>"}),$("#pubs").append(t)});
+    </script>
   </body>
 </html>
