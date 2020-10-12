@@ -6,7 +6,7 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     purgecss = require('gulp-purgecss'),
     minifyinline = require('gulp-minify-inline'),
-    gs=require('gulp-selectors'),
+    batchreplace = require('gulp-batch-replace'),
     browserSync = require('browser-sync').create();
 
 let classList = require('./src/class_replace');
@@ -38,18 +38,32 @@ gulp.task('purgeCSS', function (){
         .pipe(gulp.dest('builds/dev'))
 });
 
-gulp.task('minifyClassNames', function () {
-    return gulp.src('builds/dev/**/*.css', 'builds/dev/**/*.html')
-        .pipe(gs.run())
-        .pipe(csso())
-        .pipe(gulp.dest('builds/dist'));
+gulp.task('uglyCSS', function (){
+    return gulp.src('builds/dev/suprachem.css')
+        .pipe(batchreplace(classList))
+        .pipe(gulp.dest("builds/dist"))
 });
 
+gulp.task('uglyHTML', function (){
+    return gulp.src('builds/dev/*.html')
+        .pipe(batchreplace(classList))
+        .pipe(gulp.dest("builds/dist"))
+});
+
+
 //browsersync dist
-gulp.task('browserSync', function () {
+gulp.task('browserSync_DEV', function () {
     browserSync.init({
         server: {
             baseDir: ["./builds/dev/", "./builds/assets/"]
+        }
+    });
+});
+
+gulp.task('browserSync_DIST', function () {
+    browserSync.init({
+        server: {
+            baseDir: ["./builds/dist/", "./builds/assets/"]
         }
     });
 });
