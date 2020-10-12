@@ -4,10 +4,7 @@ let gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     csso = require('gulp-clean-css'),
-    concat = require('gulp-concat'),
     rename = require('gulp-rename'),
-    minify=require('@node-minify/core'),
-    terser=require('@node-minify/terser'),
     purgecss=require('gulp-purgecss'),
     browserSync = require('browser-sync').create();
 

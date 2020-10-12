@@ -44,6 +44,10 @@ html, body {
   margin-bottom: 2rem;
 }
 
+.img-pub{
+  max-height: 250px;
+}
+
 .card-body-member {
   @extend .d-flex;
   @extend .flex-column;
@@ -51,4 +55,12 @@ html, body {
   @extend .text-center;
   @extend .text-md-left;
   @extend .align-items-center;
+}
+
+.address {
+  @extend .fixed-bottom;
+  @extend .text-center;
+  @extend .small;
+  @extend .py-1;
+  color: $yellow;
 }

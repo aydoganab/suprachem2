@@ -57,11 +57,16 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit; }
+
 
 strong {
   font-weight: bolder; }
 
-small, .small {
+ .address {
   font-size: 0.875em; }
 
 a {
@@ -232,7 +237,7 @@ tr {
   left: 0;
   z-index: 1030; }
 
-.fixed-bottom {
+ .address {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -290,7 +295,7 @@ tr {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
-.py-1 {
+ .address {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
@@ -307,11 +312,8 @@ tr {
 .text-uppercase {
   text-transform: uppercase !important; }
 
-.text-center, .page-header, .card-body-member {
+.text-center, .page-header, .card-body-member, .address {
   text-align: center !important; }
-
-.text-danger {
-  color: #dc3545 !important; }
 
 .text-white {
   color: #fff !important; }
@@ -359,3 +361,9 @@ html, body {
 
 .card {
   margin-bottom: 2rem; }
+
+.img-pub {
+  max-height: 250px; }
+
+.address {
+  color: #ffc107; }

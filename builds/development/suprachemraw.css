@@ -132,7 +132,7 @@ b,
 strong {
   font-weight: bolder; }
 
-small, .small {
+small, .small, .address {
   font-size: 0.875em; }
 
 mark, .mark {
@@ -1694,7 +1694,7 @@ progress {
   left: 0;
   z-index: 1030; }
 
-.fixed-bottom {
+.fixed-bottom, .address {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -2386,7 +2386,7 @@ progress {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.py-1 {
+.py-1, .address {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
@@ -2508,7 +2508,7 @@ progress {
 .text-right {
   text-align: right !important; }
 
-.text-center, .page-header, .card-body-member {
+.text-center, .page-header, .card-body-member, .address {
   text-align: center !important; }
 
 .text-primary {
@@ -4510,3 +4510,9 @@ html, body {
 
 .card {
   margin-bottom: 2rem; }
+
+.img-pub {
+  max-height: 250px; }
+
+.address {
+  color: #ffc107; }
