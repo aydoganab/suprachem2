@@ -8,6 +8,7 @@ let gulp = require('gulp'),
     minifyinline = require('gulp-minify-inline'),
     htmlmin = require('gulp-htmlmin'),
     cachebust=require('gulp-cache-bust'),
+    rcs = require('gulp-rcs'),
     browserSync = require('browser-sync').create();
 
 
@@ -33,12 +34,17 @@ gulp.task('purgeCSS', function (){
         .pipe(purgecss({
             content: ['builds/dev/*.html']
         }))
-        .pipe(csso())
-        .pipe(gulp.dest('builds/dist'))
+        .pipe(gulp.dest('builds/pre_dist'))
+});
+
+gulp.task('rcs', function () {
+    return gulp.src(['builds/pre_dist/*.css', 'builds/dev/*.html'])
+        .pipe(rcs())
+        .pipe(gulp.dest('builds/pre_dist'));
 });
 
 gulp.task('minifyHTML', function (){
-    return gulp.src('builds/dev/*.html')
+    return gulp.src('builds/pre_dist/*.html')
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -46,6 +52,12 @@ gulp.task('minifyHTML', function (){
         .pipe(minifyinline())
         .pipe(cachebust())
         .pipe(gulp.dest('builds/dist'))
+});
+
+gulp.task('minifyCSS', function () {
+    return gulp.src(['builds/pre_dist/*.css'])
+        .pipe(csso())
+        .pipe(gulp.dest('builds/dist'));
 });
 
 
@@ -61,7 +73,7 @@ gulp.task('browserSync_DEV', function () {
 gulp.task('browserSync_DIST', function () {
     browserSync.init({
         server: {
-            baseDir: ["./builds/dist/", "./builds/assets/"]
+            baseDir: ["builds/dist/", "./builds/assets/"]
         }
     });
 });
@@ -69,4 +81,4 @@ gulp.task('browserSync_DIST', function () {
 
 gulp.task('dev', gulp.series('sass','pug'));
 
-gulp.task('dist', gulp.series('purgeCSS','minifyHTML'));
+gulp.task('dist', gulp.series('purgeCSS','rcs','minifyHTML','minifyCSS'));
