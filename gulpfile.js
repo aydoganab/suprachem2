@@ -6,17 +6,15 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     purgecss = require('gulp-purgecss'),
     minifyinline = require('gulp-minify-inline'),
-    batchreplace = require('gulp-batch-replace'),
+    htmlmin = require('gulp-htmlmin'),
     browserSync = require('browser-sync').create();
 
-let classList = require('./src/class_replace');
 
 gulp.task('pug', function () {
     return gulp.src('src/*pug')
         .pipe(pug({
-            pretty: false
+            pretty: true
         }))
-        .pipe(minifyinline())
         .pipe(gulp.dest('builds/dev'));
 });
 
@@ -34,20 +32,18 @@ gulp.task('purgeCSS', function (){
         .pipe(purgecss({
             content: ['builds/dev/*.html']
         }))
-        .pipe(rename('suprachem.css'))
-        .pipe(gulp.dest('builds/dev'))
+        .pipe(csso())
+        .pipe(gulp.dest('builds/dist'))
 });
 
-gulp.task('uglyCSS', function (){
-    return gulp.src('builds/dev/suprachem.css')
-        .pipe(batchreplace(classList))
-        .pipe(gulp.dest("builds/dist"))
-});
-
-gulp.task('uglyHTML', function (){
+gulp.task('minifyHTML', function (){
     return gulp.src('builds/dev/*.html')
-        .pipe(batchreplace(classList))
-        .pipe(gulp.dest("builds/dist"))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
+        }))
+        .pipe(minifyinline())
+        .pipe(gulp.dest('builds/dist'))
 });
 
 
@@ -69,4 +65,6 @@ gulp.task('browserSync_DIST', function () {
 });
 
 
-gulp.task('default', gulp.series('sass','pug'));
+gulp.task('dev', gulp.series('sass','pug'));
+
+gulp.task('dist', gulp.series('purgeCSS','minifyHTML'));
