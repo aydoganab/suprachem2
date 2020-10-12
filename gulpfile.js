@@ -7,6 +7,7 @@ let gulp = require('gulp'),
     purgecss = require('gulp-purgecss'),
     minifyinline = require('gulp-minify-inline'),
     htmlmin = require('gulp-htmlmin'),
+    cachebust=require('gulp-cache-bust'),
     browserSync = require('browser-sync').create();
 
 
@@ -43,6 +44,7 @@ gulp.task('minifyHTML', function (){
             removeComments: true
         }))
         .pipe(minifyinline())
+        .pipe(cachebust())
         .pipe(gulp.dest('builds/dist'))
 });
 
