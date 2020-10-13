@@ -10,7 +10,7 @@
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-48118884-3"></script>
   </head>
   <body>
-    <div class="fixed-top" style="background-color:#292933">
+    <div class="fixed-top" style="background-color:#292933b3">
       <div class="container d-flex align-items-center px-md-5 pt-2 pt-md-4 mb-2 mb-md-4 flex-column flex-md-row"><a href="./"><img src="img/logo.png" height="30" width="128"></a>
         <nav class="nav text-uppercase ml-md-auto pt-2 pt-md-0"><a class="nav-link px-2 px-md-4" href="research.html">Research</a><a class="nav-link px-2 px-md-4" href="publications.html">Publications</a><a class="nav-link px-2 px-md-4" href="members.html">Members</a></nav>
       </div>
@@ -21,49 +21,6 @@
         <div class="col-md-8" id="pubs"></div>
       </div>
     </div>
-    <script>
-      let xhr = new XMLHttpRequest();
-      xhr.onload = function () {
-          let pupdata = JSON.parse(xhr.responseText);
-          let t = "";
-          for (let i = 0; i < pupdata.length; i++) {
-              let s=pupdata[i];
-              t += '<div class="card" data-year="' + s.year + '">' +
-                  '<div class="card-body">' +
-                  '<h5 class="card-title">' + s.title + '</h5>' +
-                  '<h6 class="card-subtitle text-muted">' + s.authors + '</h6>' +
-                  '<p class="card-text">' +
-                  '<i>' + s.journal + '</i>' +
-                  '<strong> ' + s.year + '</strong>';
-      
-              if(s.volume != ""){
-                  t += ',<i> '+s.volume+'</i>';
-              }
-      
-              if(s.pages != ""){
-                  t += ', ' + s.pages;
-              }
-      
-              t += '</p>';
-      
-              if(s.image != ""){
-                  t += '<div class="text-center mb-3">' +
-                      '<img src="' + s.image + '" class="img-fluid img-pub">' +
-                      '</div>';
-              }
-      
-              if(s.abstract != ""){
-                  t += '<p class="card-text">' + s.abstract + '</p>';
-              }
-      
-              t += '<a href="https://doi.org/' + s.doi + '" target="_blank">DOI: ' + s.doi + '</a>' +
-                  '</div>' +
-                  '</div>';
-          }
-          document.getElementById('pubs').innerHTML = t;
-      };
-      xhr.open('GET', 'publications.json', true);
-      xhr.send();
-    </script>
+    <script src="publications.js"></script>
   </body>
 </html>

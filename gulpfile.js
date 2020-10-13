@@ -7,8 +7,9 @@ let gulp = require('gulp'),
     purgecss = require('gulp-purgecss'),
     minifyinline = require('gulp-minify-inline'),
     htmlmin = require('gulp-htmlmin'),
-    cachebust=require('gulp-cache-bust'),
+    cachebust = require('gulp-cache-bust'),
     rcs = require('gulp-rcs'),
+    terser = require('gulp-terser'),
     browserSync = require('browser-sync').create();
 
 
@@ -17,6 +18,12 @@ gulp.task('pug', function () {
         .pipe(pug({
             pretty: true
         }))
+        .pipe(gulp.dest('builds/dev'));
+});
+
+gulp.task('js', function () {
+    return gulp.src('src/js/*.js')
+        .pipe(minifyinline())
         .pipe(gulp.dest('builds/dev'));
 });
 
@@ -29,7 +36,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest("builds/dev"))
 });
 
-gulp.task('purgeCSS', function (){
+gulp.task('purgeCSS', function () {
     return gulp.src('builds/dev/*.css')
         .pipe(purgecss({
             content: ['builds/dev/*.html']
@@ -38,12 +45,12 @@ gulp.task('purgeCSS', function (){
 });
 
 gulp.task('rcs', function () {
-    return gulp.src(['builds/pre_dist/*.css', 'builds/dev/*.html'])
+    return gulp.src(['./builds/pre_dist/**/*.css', './builds/dev/**/*.js', './builds/dev/**/*.html'])
         .pipe(rcs())
-        .pipe(gulp.dest('builds/pre_dist'));
+        .pipe(gulp.dest('./builds/pre_dist'));
 });
 
-gulp.task('minifyHTML', function (){
+gulp.task('minifyHTML', function () {
     return gulp.src('builds/pre_dist/*.html')
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -58,6 +65,19 @@ gulp.task('minifyCSS', function () {
     return gulp.src(['builds/pre_dist/*.css'])
         .pipe(csso())
         .pipe(gulp.dest('builds/dist'));
+});
+
+gulp.task('minifyJS', function () {
+    return gulp.src('./builds/pre_dist/*.js')
+        //.pipe(sourcemaps.init())
+        .pipe(terser({
+            warnings: true, // pass true to display compressor warnings.
+            mangle: true, // pass false to skip mangling names.
+            output: {}, // pass an object if you wish to specify additional output options. The defaults are optimized for best compression.
+            compress: false
+        }))
+        //.pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./builds/dist'));
 });
 
 
@@ -79,6 +99,6 @@ gulp.task('browserSync_DIST', function () {
 });
 
 
-gulp.task('dev', gulp.series('sass','pug'));
+gulp.task('dev', gulp.series('sass', 'pug', 'js'));
 
-gulp.task('dist', gulp.series('purgeCSS','rcs','minifyHTML','minifyCSS'));
+gulp.task('dist', gulp.series('purgeCSS', 'rcs', 'minifyHTML', 'minifyCSS', 'minifyJS'));
