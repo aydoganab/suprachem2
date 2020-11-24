@@ -261,41 +261,44 @@ tr {
   display: -webkit-box !important;
   display: flex !important; }
 
+.j {
+  display: none !important; }
+
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
-.j {
+.q {
   position: absolute !important; }
 
-.q {
+.z {
   width: 100% !important; }
 
-.z {
+.te {
   height: 100% !important; }
 
-.te, ._ {
+.tt, ._ {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
           flex-direction: column !important; }
 
-.tt {
+.tn {
   -webkit-box-pack: center !important;
           justify-content: center !important; }
 
-.tn, ._ {
+.tr, ._ {
   -webkit-box-align: center !important;
           align-items: center !important; }
 
- .tr {
+ .ti {
   margin-top: 3rem !important; }
 
-.ti {
+.ts {
   margin-bottom: 0.5rem !important; }
 
-.ts {
+.to {
   margin-bottom: 1rem !important; }
 
-.to {
+.tu {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important; }
 
@@ -303,54 +306,58 @@ tr {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important; }
 
- .tr {
+ .ti {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
-.tu {
+.ta {
   padding-top: 0.5rem !important; }
 
-.ta {
+.tf {
   padding-bottom: 0 !important; }
 
-.tf {
+.tl {
   text-transform: uppercase !important; }
 
-.tl, .tr, ._, .address {
+.tc, .ti, ._, .address {
   text-align: center !important; }
 
-.tc {
+.th {
   color: #fff !important; }
 
-.th {
+.tp {
   color: #6c757d !important; }
 
-.tp {
+.td {
   background-color: transparent !important; }
 
-.td {
+.tv {
   border-radius: 50% !important; }
 
+@media (min-width: 576px) {
+  .tm {
+    display: block !important; } }
+
 @media (min-width: 768px) {
-  .tv, ._ {
+  .tg, ._ {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
             flex-direction: row !important; }
-  .tm {
-    margin-bottom: 1.5rem !important; }
-  .tg {
-    margin-left: auto !important; }
   .ty {
+    margin-bottom: 1.5rem !important; }
+  .tb {
+    margin-left: auto !important; }
+  .tw {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important; }
-  .tb {
+  .tx {
     padding-right: 3rem !important;
     padding-left: 3rem !important; }
-  .tw {
-    padding-top: 0 !important; }
-  .tx {
-    padding-top: 1.5rem !important; }
   .tk {
+    padding-top: 0 !important; }
+  .t_ {
+    padding-top: 1.5rem !important; }
+  .tj {
     padding-left: 1.5rem !important; }
    ._ {
     text-align: left !important; } }
@@ -360,7 +367,7 @@ html, body {
   background-size: cover;
   min-height: 100% !important; }
 
-.tr {
+.ti {
   color: #ffc107; }
 
 .l {

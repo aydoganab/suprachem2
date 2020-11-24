@@ -48,7 +48,7 @@ xhr.onload = function () {
 
         if(s.abstract != ""){
             let p_abstract = document.createElement('p');
-            p_abstract.className = "card-text";
+            p_abstract.classList.add('card-text', 'd-none', 'd-sm-block');
             p_abstract.appendChild(document.createTextNode(s.abstract));
             card_body.appendChild(p_abstract);
         }
