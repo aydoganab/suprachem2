@@ -39,7 +39,7 @@ gulp.task('sass', function () {
 gulp.task('purgeCSS', function () {
     return gulp.src('builds/dev/*.css')
         .pipe(purgecss({
-            content: ['builds/dev/*.html']
+            content: ['builds/dev/*.html', 'builds/dev/*.js']
         }))
         .pipe(gulp.dest('builds/pre_dist'))
 });
