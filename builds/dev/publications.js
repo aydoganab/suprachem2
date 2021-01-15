@@ -41,6 +41,7 @@ xhr.onload = function () {
             let img = document.createElement('img');
             img.classList.add('img-fluid', 'img-pub');
             img.style.maxHeight="250px";
+            img.setAttribute("loading", "lazy");
             img.src = s.image;
             div_img.appendChild(img);
             card_body.appendChild(div_img);
