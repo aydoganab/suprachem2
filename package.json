@@ -36,6 +36,5 @@
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^1.4.1",
     "rcs-core": "^3.6.0"
-  },
-  "dependencies": {}
+  }
 }
