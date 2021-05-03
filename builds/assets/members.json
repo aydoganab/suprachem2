@@ -1,0 +1,72 @@
+[
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Sana Amharar",
+    "email": "sana777@hotmail.fr",
+    "img": "chemist.svg"
+  },
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Yelda Ünlü",
+    "email": "unlu19@itu.edu.tr",
+    "img": "yelda-unlu.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Nilay Kasabaslı Başaran",
+    "email": "kasabali@itu.edu.tr",
+    "img": "nilay-kasabali-basaran.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Eda Rende Kılıç",
+    "email": "rende@itu.edu.tr",
+    "img": "eda-rende-kilic.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "MSc Student",
+    "name": "Ayşegül Budak",
+    "email": "budak19@itu.edu.tr",
+    "img": "aysegul-budak.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "MSc Student",
+    "name": "Ayşe Odabaş",
+    "email": "odabasa19@itu.edu.tr",
+    "img": "ayse-odabas.jpg"
+  },
+  {
+    "loc": "former",
+    "level": "Undergrad Student",
+    "name": "Zeynep Dolapdere",
+    "email": "zdolapdere@gmail.com",
+    "img": "zeynep-dolapdere.jpg"
+  },
+  {
+    "loc": "former",
+    "level": "Graduate Student",
+    "name": "Samet Yuvayapan",
+    "email": "sametyuvayapan@gmail.com",
+    "img": "samet-yuvayapan.jpg"
+  },
+  {
+    "loc": "former",
+    "level": "Undergrad Student",
+    "name": "Eda Kamertay",
+    "email": "ekamertay@gmail.com",
+    "img": "eda-kamertay.jpg"
+  },
+  {
+    "loc": "former",
+    "level": "MSc Student",
+    "name": "Ömürcan Öztürk",
+    "email": "ozturk18@itu.edu.tr",
+    "img": "omurcan-ozturk.jpg"
+  }
+]

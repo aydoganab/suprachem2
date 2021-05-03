@@ -53,6 +53,9 @@ html, body {
   @extend .text-center;
   @extend .text-md-start;
   @extend .align-items-center;
+  img{
+    max-height: 120px;
+  }
 }
 
 .address {

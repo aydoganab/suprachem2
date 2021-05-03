@@ -4,7 +4,7 @@ block page_content
 
         h2.page-header MEMBERS
 
-        .container
+        .container-lg
             .row.justify-content-center
                 .col-md-8
 
@@ -12,10 +12,10 @@ block page_content
                     .card.shadow
                         .card-body.card-body-member.pb-0
                             div
-                                img.img-fluid.rounded-circle(src='img/members/aydogan.jpg', style='max-height: 120px')
+                                img.img-fluid.rounded-circle(src='img/members/aydogan.jpg', alt='Abdullah Aydogan')
                             .ps-md-4
                                 h5.card-title Assoc. Prof. Dr. Abdullah Aydoğan
-                                h6.card-subtitle Principal Investigator
+                                h6.card-subtitle.text-muted Principal Investigator
                         .card-body
                             p.card-text Dr. Aydogan obtained his PhD in 2010 from Istanbul Technical University,TURKEY with Prof. Ahmet Akar on functionalized calix[4]pyrroles and their applications in anion recognition and selective extraction of anions. During post-doctoralresearch with Prof. Jonathan L. Sessler at the University of Texas at Asutin, USA, heworked in the area of calix[4]pyrrole based supramolecular polymers, anion recognition triggered assembly and disassembly of nanoparticles, and the electrochemical anion sensors. Currently, he is an Associate Professor at the <a class='link-warning' href="http://www.kimya.itu.edu.tr/EN">Chemistry Department</a> of <a class='link-warning' href="http://www.itu..edu.tr">Istanbul Technical University</a>, Turkey. His research focuses on the development of supramolecular polymers based on the anion recognition, supramolecular chemistry and its applications in recognition and sensing.
                         .card-footer.bg-transparent
@@ -24,112 +24,17 @@ block page_content
                             //a.card-link.text-white.disabled(href='cv_aydogan.pdf') &#10002; Dr. Aydogan's CV
 
 
-                    //-SANA AMHARAR
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/chemist.svg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Sana Amharar
-                                h6.card-subtitle.text-muted Graduate Student
-                                a.card-link(href='mailto:sana777@hotmail.fr') sana777@hotmail.fr
+                    //-CURRENT MEMBERS
+                    #current
+
+                    //-FORMER MEMBERS
+                    h2.page-header.pt-2 Former Group Members
+                    #former
 
 
-                    //-YELDA UNLU
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/yelda.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Yelda Ünlü
-                                h6.card-subtitle.text-muted Graduate Student
-                                a.card-link(href='mailto:unlu19@itu.edu.tr') unlu19@itu.edu.tr
+        script(src='members.js')
 
 
 
-                    //-NİLAY KASABALI
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/nilay.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Nilay Kasabaslı Başaran
-                                h6.card-subtitle.text-muted Graduate Student
-                                a.card-link(href='mailto:kasabali@itu.edu.tr') kasabali@itu.edu.tr
-
-                    //-EDA RENDE
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/eda-rende.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Eda Rende Kılıç
-                                h6.card-subtitle.text-muted Graduate Student
-                                a.card-link(href='mailto:rende@itu.edu.tr') rende@itu.edu.tr
 
 
-                    //-AYŞEGÜL BUDAK
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/aysegul.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Ayşegül Budak
-                                h6.card-subtitle.text-muted MSc Student
-                                a.card-link(href='mailto:budak19@itu.edu.tr') budak19@itu.edu.tr
-
-
-                    //-AYŞE ODABAŞ
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/ayse.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Ayşe Odabaş
-                                h6.card-subtitle.text-muted MSc Student
-                                a.card-link(href='mailto:odabasa19@itu.edu.tr') odabasa19@itu.edu.tr
-
-
-
-                    h2.page-header Former Group Members
-
-                    //-ZEYNEP DOLAPDERE
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/zeynep.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Zeynep Dolapdere
-                                h6.card-subtitle.text-muted Undergraduate Student
-                                a.card-link(href='mailto:zdolapdere@gmail.com') zdolapdere@gmail.com
-
-                    //-SAMET YUVAYAPAN
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/samet.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Samet Yuvayapan
-                                h6.card-subtitle.text-muted Graduate Student
-                                a.card-link(href='mailto:syuvayapan@itu.edu.tr') syuvayapan@itu.edu.tr
-
-
-                    //-EDA KAMERTAY
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/eda.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Eda Kamertay
-                                h6.card-subtitle.text-muted Undergraduate Student
-                                a.card-link(href='mailto:ekamertay@gmail.com') ekamertay@gmail.com
-
-                    //-ÖMÜRCAN ÖZTÜRK
-                    .card
-                        .card-body.card-body-member
-                            div
-                                img.img-fluid.rounded-circle(src='img/members/omurcan.jpg', style='max-height: 120px')
-                            .ps-md-4
-                                h5.card-title Ömürcan Öztürk
-                                h6.card-subtitle.text-muted MSc Student
-                                a.card-link(href='mailto:ozturk18@itu.edu.tr') ozturk18@itu.edu.tr

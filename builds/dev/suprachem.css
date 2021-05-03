@@ -4310,5 +4310,8 @@ html, body {
 .card {
   margin-bottom: 2rem; }
 
+.card-body-member img {
+  max-height: 120px; }
+
 .address {
   color: #ffc107; }
