@@ -317,50 +317,53 @@ tr {
 .tc {
   padding-bottom: 0 !important; }
 
-.th, .ts, .j, .address {
+.th {
+  font-weight: 300 !important; }
+
+.tp, .ts, .j, .address {
   text-align: center !important; }
 
-.tp {
+.td {
   text-transform: uppercase !important; }
 
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
 
-.td {
+.tv {
   color: #fff !important; }
 
-.tv {
+.tm {
   color: #6c757d !important; }
 
-.tm {
+.tg {
   background-color: transparent !important; }
 
-.tg {
+.ty {
   border-radius: 50% !important; }
 
 @media (min-width: 576px) {
-  .ty {
+  .tb {
     display: block !important; } }
 
 @media (min-width: 768px) {
-  .tb, .j {
+  .tw, .j {
     flex-direction: row !important; }
-  .tw {
-    margin-bottom: 1.5rem !important; }
   .tx {
-    margin-left: auto !important; }
+    margin-bottom: 1.5rem !important; }
   .tk {
+    margin-left: auto !important; }
+  .t_ {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important; }
-  .t_ {
+  .tj {
     padding-right: 3rem !important;
     padding-left: 3rem !important; }
-  .tj {
-    padding-top: 0 !important; }
   .tq {
-    padding-top: 1.5rem !important; }
+    padding-top: 0 !important; }
   .tz {
+    padding-top: 1.5rem !important; }
+  .ne {
     padding-left: 1.5rem !important; }
    .j {
     text-align: left !important; } }

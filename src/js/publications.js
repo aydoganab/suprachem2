@@ -6,7 +6,6 @@ xhr.onload = function () {
 
         let card = document.createElement('div');
         card.className = "card";
-        card.setAttribute("id", "pub" + s.num);
 
         let card_body = document.createElement('div');
         card_body.className = "card-body";
@@ -64,12 +63,6 @@ xhr.onload = function () {
 
 
         document.getElementById('pubs').appendChild(card);
-
-    }
-    //scroll to hash
-    if (window.location.hash) {
-        let hash = window.location.hash;
-        window.location.href = hash;
     }
 };
 xhr.open('GET', 'publications.json', true);
