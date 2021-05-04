@@ -1,16 +1,20 @@
 [
   {
-    "title": "Ion Pair Recognition Based Supramolecular Polymer Showing Rapid and Reversible Sol–Gel Transition through van der Waals Interactions",
+    "num": 22,
+    "resfield": "spolymer",
+    "title": "A Calix[4]pyrrole-based linear supramolecular polymer constructed by orthogonal self-assembly",
     "authors": "Aysegul Budak and Abdullah Aydogan*",
     "journal": "Chemical Communications",
     "year": "2021",
-    "volume": "",
-    "pages": "",
+    "volume": "57",
+    "pages": "4186-4189",
     "doi": "10.1039/D1CC01003D",
     "abstract": "A calix[4]pyrrole having a ureidopyrimidinone unit was successfully synthesized from its alcohol-functionalized congener and further used for the first time to obtain a thermo- and chemical-responsive linear supramolecular polymer via orthogonal self-assembly comprising a combination of quadruple hydrogen bonding and anion recognition",
-    "image": ""
+    "image": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1CC01003D&imageInfo.ImageIdentifier.Year=2021"
   },
   {
+    "num": 21,
+    "resfield": "spolymer",
     "title": "Ion Pair Recognition Based Supramolecular Polymer Showing Rapid and Reversible Sol–Gel Transition through van der Waals Interactions",
     "authors": "Sana Amharar, Armagan Atsay, and Abdullah Aydogan*",
     "journal": "ACS Applied Polymer Materials",
@@ -22,6 +26,8 @@
     "image": "https://pubs.acs.org/na101/home/literatum/publisher/achs/journals/content/aapmcd/2020/aapmcd.2020.2.issue-12/acsapm.0c01210/20201204/images/large/ap0c01210_0007.jpeg"
   },
   {
+    "num": 20,
+    "resfield": "spolymer",
     "title": "Supramolecular Calix[4]pyrrole Polymers from a Complementary Pair of Homoditopic Host-Guest Molecules",
     "authors": "Samet Yuvayapan, Abdullah Aydogan*",
     "journal": "Chemical Communications",
@@ -33,6 +39,8 @@
     "image": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C9CC02806D&imageInfo.ImageIdentifier.Year=2019"
   },
   {
+    "num": 19,
+    "resfield": "",
     "title": "Cover Feature: Counter Cation Dependent and Stimuli Responsive Supramolecular Polymers Constructed by Calix[4]pyrrole Based Host–Guest Interactions (Eur. J. Org. Chem. 4/2019)",
     "authors": "Samet Yuvayapan, Abdullah Aydogan*",
     "journal": "Eur. J. Org. Chem.",
@@ -44,6 +52,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/91d217b5-5cad-42d9-a051-0c683d7e9c8c/ejoc201900054-toc-0001-m.jpg"
   },
   {
+    "num": 18,
+    "resfield": "spolymer",
     "title": "Counter Cation Dependent and Stimuli Responsive Supramolecular Polymers Constructed by Calix[4]pyrrole Based Host-Guest Interactions",
     "authors": "Samet Yuvayapan, Abdullah Aydogan*",
     "journal": "Eur. J. Org. Chem.",
@@ -55,6 +65,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/03130647-cc35-4c3b-8b4b-d7f24fc31d34/ejoc201801663-toc-0001-m.jpg"
   },
   {
+    "num": 17,
+    "resfield": "sensor",
     "title": "Calix[4]pyrrole-decorated carbon nanotubes on paper for sensing acetone vapor",
     "authors": "Elif Baysak, SametYuvayapan, AbdullahAydogan*, Gurkan Hizal*",
     "journal": "Sensors and Actuators B: Chemical",
@@ -66,6 +78,8 @@
     "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0925400517322645-fx1.jpg"
   },
   {
+    "num": 16,
+    "resfield": "spolymer",
     "title": "A thermoresponsive supramolecular polymer gel from a heteroditopic calix[4]pyrrole",
     "authors": "Sana Amharar,  Samet Yuvayapan  and  Abdullah Aydogan*",
     "journal": "Chemical Communications",
@@ -77,6 +91,8 @@
     "image": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C7CC08607E&imageInfo.ImageIdentifier.Year=2018"
   },
   {
+    "num": 15,
+    "resfield": "sensor",
     "title": "Calix[4]pyrroles with bulky substituents and their anion binding studies",
     "authors": "Ahmet Akar, Abdullah Aydogan*",
     "journal": "Turkish Journal of Chemistry",
@@ -88,6 +104,8 @@
     "image": ""
   },
   {
+    "num": 14,
+    "resfield": "extraction",
     "title": "Synthesis and characterisation of a calix[4]pyrrole functional polystyrene via click chemistry and its use in the extraction of halide anion salts",
     "authors": "Abdullah Aydogan",
     "journal": "Supramolecular Chemistry",
@@ -99,6 +117,8 @@
     "image": ""
   },
   {
+    "num": 13,
+    "resfield": "nano",
     "title": "Frontispiece: Reversible Assembly and Disassembly of Receptor‐Decorated Gold Nanoparticles Controlled by Ion Recognition",
     "authors": "Abdullah Aydogan, Gawon Lee, Chang-Hee Lee*, Jonathan L. Sessler*",
     "journal": "Chemistry - A European Journal",
@@ -110,6 +130,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/6d20b927-5194-4c24-b54a-4c75c6ec44b4/mcontent.jpg"
   },
   {
+    "num": 12,
+    "resfield": "nano",
     "title": "Reversible Assembly and Disassembly of Receptor‐Decorated Gold Nanoparticles Controlled by Ion Recognition",
     "authors": "Abdullah Aydogan, Gawon Lee, Chang-Hee Lee*, Jonathan L. Sessler*",
     "journal": "Chemistry - A European Journal",
@@ -121,6 +143,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/2ba22813-c95d-43a8-a53b-c99c700a9784/mcontent.jpg"
   },
   {
+    "num": 11,
+    "resfield": "",
     "title": "Tetrakis(bicyclo[2.2.2]oct‐2‐ene)‐Fused Calix[4]pyrrole",
     "authors": "Abdullah Aydogan, Ahmet Akar*",
     "journal": "Helvetica Chimica Acta",
@@ -132,6 +156,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/1203b4d9-4911-450a-9be3-7cf2a6a3aa62/mcontent.jpg"
   },
   {
+    "num": 10,
+    "resfield": "spolymer",
     "title": "An imidazolium-functionalized self-assembling calix[4]pyrrole",
     "authors": "Abdullah Aydogan, Jonathan L. Sessler*",
     "journal": "Chemical Commununications",
@@ -143,6 +169,8 @@
     "image": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C4CC06641C&imageInfo.ImageIdentifier.Year=2014"
   },
   {
+    "num": 9,
+    "resfield": "sensor",
     "title": "EDOT-Functionalized Calix[4]pyrrole for the Electrochemical Sensing of Fluoride in Water",
     "authors": "Abdullah Aydogan*, Atıf Koca, M. Kasım Şener, Jonathan L. Sessler",
     "journal": "Organic Letters",
@@ -154,6 +182,8 @@
     "image": "https://pubs.acs.org/na101/home/literatum/publisher/achs/journals/content/orlef7/2014/orlef7.2014.16.issue-14/ol501635s/production/images/medium/ol-2014-01635s_0008.gif"
   },
   {
+    "num": 8,
+    "resfield": "nano",
     "title": "Decoration of Gold Nanoparticles by a Double-Armed Calix[4]pyrrole: A Receptor-Decorated Nanoensemble for Anion Sensing and Extraction",
     "authors": "Punidha Sokkalingam, Seong-Jin Hong, Abdullah Aydogan, Jonathan L. Sessler*, Chang-Hee Lee*",
     "journal": "Chemistry - A European Journal",
@@ -165,6 +195,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/36ac9918-a2af-420f-a897-e0b215fb2d6f/mcontent.jpg"
   },
   {
+    "num": 7,
+    "resfield": "extraction",
     "title": "Tri- and Pentacalix[4]pyrroles: Synthesis, Characterization and Their Use in the Extraction of Halide Salts",
     "authors": "Abdullah Aydogan*, Ahmet Akar*",
     "journal": "Chemistry - A European Journal",
@@ -176,7 +208,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/c9b0d98e-db8c-4059-b287-279ae8524b49/mcontent.jpg"
   },
   {
-
+    "num": 6,
+    "resfield": "sensor",
     "title": "Siloxane-functionalized calix[4]pyrrole: synthesis, characterization and modification of silica-based solid supports",
     "authors": "Abdullah Aydogan, Ahmet Akar*",
     "journal": "Tetrahedron Letters",
@@ -188,6 +221,8 @@
     "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0040403911005351-fx1.jpg"
   },
   {
+    "num": 5,
+    "resfield": "",
     "title": "5,10,10,15,20,20-Hexamethylcalix[4]pyrrole 5,15-diethyl diester",
     "authors": "Abdullah Aydogan, Ahmet Akar*",
     "journal": "Acta Crystallographica Section E",
@@ -199,6 +234,8 @@
     "image": "http://journals.iucr.org/e/issues/2009/12/00/om2288/om2288fig1.jpg?rand=1566292957598"
   },
   {
+    "num": 4,
+    "resfield": "extraction",
     "title": "Poly(methyl methacrylate)s with Pendant Calixpyrroles and Crown Ethers: Polymeric Extractants for Potassium Halides",
     "authors": "Abdullah Aydogan, DanielJ. Coady, SungKuk Kim, Ahmet Akar*, ChristopherW. Bielawski*, Manuel Marquez, JonathanL. Sessler*",
     "journal": "Angewandte Chemie International Edition",
@@ -210,6 +247,8 @@
     "image": "https://wol-prod-cdn.literatumonline.com/cms/attachment/3f19a5e4-eb4f-4bae-9874-16a19b5112d0/mcontent.jpg"
   },
   {
+    "num": 3,
+    "resfield": "sensor",
     "title": "Calix[4]pyrroles with Long Alkyl Chains: Synthesis, Characterization, and Anion Binding Studies",
     "authors": "Abdullah Aydogan, Jonathan L. Sessler*, Ahamet Akar*, Vincent Lynch",
     "journal": "Supramolecular Chemistry",
@@ -221,6 +260,8 @@
     "image": "https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/gsch20/2008/gsch20.v020.i01-02/10610270701429789/production/images/medium/gsch_a_242862_o_uf0001.gif"
   },
   {
+    "num": 2,
+    "resfield": "extraction",
     "title": "Poly(methyl methacrylate)s with pendant calixpyrroles: polymeric extractants for halide anion salts",
     "authors": "Abdullah Aydogan, Daniel J. Coady, Vincent M. Lynch, Ahmet Akar*, Manuel Marquez, Christopher W. Bielawski*, Jonathan L. Sessler*",
     "journal": "Chemical Communications",
@@ -232,6 +273,8 @@
     "image": "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=B718021G&imageInfo.ImageIdentifier.Year=2008"
   },
   {
+    "num": 1,
+    "resfield": "",
     "title": "Synthesis of meso -tetra acid and ester functionalized calix[4]pyrroles",
     "authors": "Ahmet Akar*, Abdullah Aydogan",
     "journal": "Journal of Heterocyclic Chemistry",

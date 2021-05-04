@@ -68,6 +68,19 @@ address {
   line-height: inherit; }
 
 
+ul {
+  padding-left: 2rem; }
+
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+
+ul ul {
+  margin-bottom: 0; }
+
+
 strong {
   font-weight: bolder; }
 
@@ -93,6 +106,9 @@ tr {
   border-color: inherit;
   border-style: solid;
   border-width: 0; }
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none; }
 
 /* rtl:raw:
 [type="tel"],
@@ -296,52 +312,55 @@ tr {
   padding-top: 0.5rem !important; }
 
 .tl {
+  padding-right: 0.5rem !important; }
+
+.tc {
   padding-bottom: 0 !important; }
 
-.tc, .ts, .j, .address {
+.th, .ts, .j, .address {
   text-align: center !important; }
 
-.th {
+.tp {
   text-transform: uppercase !important; }
 
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
 
-.tp {
+.td {
   color: #fff !important; }
 
-.td {
+.tv {
   color: #6c757d !important; }
 
-.tv {
+.tm {
   background-color: transparent !important; }
 
-.tm {
+.tg {
   border-radius: 50% !important; }
 
 @media (min-width: 576px) {
-  .tg {
+  .ty {
     display: block !important; } }
 
 @media (min-width: 768px) {
-  .ty, .j {
+  .tb, .j {
     flex-direction: row !important; }
-  .tb {
-    margin-bottom: 1.5rem !important; }
   .tw {
-    margin-left: auto !important; }
+    margin-bottom: 1.5rem !important; }
   .tx {
+    margin-left: auto !important; }
+  .tk {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important; }
-  .tk {
+  .t_ {
     padding-right: 3rem !important;
     padding-left: 3rem !important; }
-  .t_ {
-    padding-top: 0 !important; }
   .tj {
-    padding-top: 1.5rem !important; }
+    padding-top: 0 !important; }
   .tq {
+    padding-top: 1.5rem !important; }
+  .tz {
     padding-left: 1.5rem !important; }
    .j {
     text-align: left !important; } }
