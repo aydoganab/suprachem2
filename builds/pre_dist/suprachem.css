@@ -146,14 +146,14 @@ tr {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--x) * -1);
-  margin-right: calc(var(--w) / -2);
-  margin-left: calc(var(--w) / -2); }
+  margin-right: calc(var(--w) * -.5);
+  margin-left: calc(var(--w) * -.5); }
   .s > * {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--w) / 2);
-    padding-left: calc(var(--w) / 2);
+    padding-right: calc(var(--w) * .5);
+    padding-left: calc(var(--w) * .5);
     margin-top: var(--x); }
 
 @media (min-width: 768px) {
