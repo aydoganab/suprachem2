@@ -1,5 +1,18 @@
 [
   {
+    "num": 23,
+    "resfield": "sensor",
+    "title": "Highly sensitive and cost-effective fluorescent turn-on sensors based on octamethylcalix[4]pyrrole receptor for the detection of fluoride anion",
+    "authors": "Sana Amharar and Abdullah Aydogan*",
+    "journal": "Dyes and Pigments",
+    "year": "2021",
+    "volume": "",
+    "pages": "",
+    "doi": "10.1016/j.dyepig.2021.109918",
+    "abstract": "Cost-effective fluorescence turn-on indicator-displacement-assay (IDA) sensors based on octamethylcalix[4]pyrrole receptor and tetrabutylammonium salts of 4-methylumbelliferone and fluorescein indicators were developed for highly sensitive detection of fluoride anion. The IDA sensor assembly relies on the hydrogen bonding between calix[4]pyrrole and carboxylate units of indicators and further displacement replacement of receptors with target analyte. While all the sensors displayed rapid and selective sensitivity towards fluoride over the other anions, 4-methylumbelliferone based IDA system was also found to have a visual color change for the sensing of fluoride anion. The experimental results revealed that fluorescein-based IDA sensor could be used for the sensing of fluoride anion with a detection limit as low as 3.2 nM.",
+    "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0143720821007841-ga1_lrg.jpg"
+  },
+  {
     "num": 22,
     "resfield": "spolymer",
     "title": "A Calix[4]pyrrole-based linear supramolecular polymer constructed by orthogonal self-assembly",

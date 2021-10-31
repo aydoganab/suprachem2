@@ -42,6 +42,27 @@
     "img": "ayse-odabas.jpg"
   },
   {
+    "loc": "current",
+    "level": "Undergrad  Student",
+    "name": "Oğuzhan Aslantürk",
+    "email": "aslanturko20@itu.edu.tr",
+    "img": "oguzhan-aslanturk.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "Undergrad  Student",
+    "name": "İrem Günderen",
+    "email": "gunderen17@itu.edu.tr",
+    "img": "chemist.svg"
+  },
+  {
+    "loc": "current",
+    "level": "Undergrad  Student",
+    "name": "Aysu Güner Mete",
+    "email": "mete17@itu.edu.tr",
+    "img": "aysu-guner-mete.jpg"
+  },
+  {
     "loc": "former",
     "level": "Undergrad Student",
     "name": "Zeynep Dolapdere",
