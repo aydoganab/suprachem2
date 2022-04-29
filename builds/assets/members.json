@@ -1,6 +1,6 @@
 [
   {
-    "loc": "current",
+    "loc": "former",
     "level": "Graduate Student",
     "name": "Sana Amharar",
     "email": "sana777@hotmail.fr",
@@ -28,7 +28,7 @@
     "img": "eda-rende-kilic.jpg"
   },
   {
-    "loc": "current",
+    "loc": "former",
     "level": "MSc Student",
     "name": "Ayşegül Budak",
     "email": "budak19@itu.edu.tr",
@@ -40,6 +40,27 @@
     "name": "Ayşe Odabaş",
     "email": "odabasa19@itu.edu.tr",
     "img": "ayse-odabas.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "PostDoc",
+    "name": "Necla Bektaş",
+    "email": "bektasn@itu.edu.tr",
+    "img": "necla-bektas.jpg"
+  },
+{
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Deniz Memiş",
+    "email": "denizmemis@gmail.com",
+    "img": "deniz-memis.jpg"
+  },
+{
+    "loc": "current",
+    "level": "MSc Student",
+    "name": "Mana Mirabolghasemi",
+    "email": "manamirabolghasemi49@gmail.com",
+    "img": "mana-mirabolghasemi.jpg"
   },
   {
     "loc": "current",
@@ -56,7 +77,7 @@
     "img": "chemist.svg"
   },
   {
-    "loc": "current",
+    "loc": "former",
     "level": "Undergrad  Student",
     "name": "Aysu Güner Mete",
     "email": "mete17@itu.edu.tr",
