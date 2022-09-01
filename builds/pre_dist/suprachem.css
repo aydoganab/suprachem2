@@ -253,19 +253,16 @@ tr {
   margin-top: var(--tx);
 }
 @media (min-width: 768px) {
-
   .o {
     flex: 0 0 auto;
     width: 83.33333333%;
   }
 }
 @media (min-width: 992px) {
-
   .u {
     flex: 0 0 auto;
     width: 50%;
   }
-
   .a {
     flex: 0 0 auto;
     width: 66.66666667%;
@@ -500,41 +497,32 @@ tr {
   border-radius: 50% !important;
 }
 @media (min-width: 768px) {
-
   .tx, .q {
     flex-direction: row !important;
   }
-
   .tk {
     margin-bottom: 1.5rem !important;
   }
-
   .t_ {
     margin-left: auto !important;
   }
-
   .tj {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
-
   .tq {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
-
   .tz {
     padding-top: 0 !important;
   }
-
   .ne {
     padding-top: 1.5rem !important;
   }
-
   .nt {
     padding-left: 1.5rem !important;
   }
-
    .q {
     text-align: left !important;
   }
