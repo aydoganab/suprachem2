@@ -31,7 +31,7 @@ xhr.onload = function () {
 
         let mememail = document.createElement("a");
         mememail.className = "card-link";
-        mememail.setAttribute("href", s.email);
+        mememail.setAttribute("href", "mailto:"+s.email);
         mememail.appendChild(document.createTextNode(s.email));
 
         div1.appendChild(img);
