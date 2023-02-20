@@ -1,5 +1,26 @@
 [
   {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Reva Bayraktar",
+    "email": "revabayraktar@gmail.com",
+    "img": "chemist.svg"
+  },
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Şerife Merve Alkur",
+    "email": "mervealkur@gmail.com",
+    "img": "serife-merve-alkur.jpg"
+  },
+  {
+    "loc": "current",
+    "level": "Graduate Student",
+    "name": "Ömer Faruk Vurur",
+    "email": "omer78faruk@yahoo.com",
+    "img": "omer-faruk-vurur.jpeg"
+  },
+  {
     "loc": "former",
     "level": "Graduate Student",
     "name": "Sana Amharar",
