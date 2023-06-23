@@ -67,3 +67,11 @@ html, body {
   @extend .py-1;
   color: $yellow;
 }
+
+.suprachem-icon{
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+}

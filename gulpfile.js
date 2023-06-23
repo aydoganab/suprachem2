@@ -46,7 +46,9 @@ gulp.task('purgeCSS', function () {
 
 gulp.task('rcs', function () {
     return gulp.src(['./builds/pre_dist/**/*.css', './builds/dev/**/*.js', './builds/dev/**/*.html'])
-        .pipe(rcs())
+        .pipe(rcs({
+            exclude:['suprachem-icon']
+        }))
         .pipe(gulp.dest('./builds/pre_dist'));
 });
 

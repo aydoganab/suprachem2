@@ -432,6 +432,10 @@ tr {
 }
 
 .tf {
+  margin-left: 0.25rem !important;
+}
+
+.tl {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
 }
@@ -446,31 +450,31 @@ tr {
   padding-bottom: 3rem !important;
 }
 
-.tl {
+.tc {
   padding-top: 0.5rem !important;
 }
 
-.tc {
+.th {
   padding-right: 0.5rem !important;
 }
 
-.th {
+.tp {
   padding-bottom: 0 !important;
 }
 
-.tp {
+.td {
   font-weight: 300 !important;
 }
 
-.td {
+.tv {
   text-align: right !important;
 }
 
-.tv, .address, .q, .to {
+.tm, .address, .q, .to {
   text-align: center !important;
 }
 
-.tm {
+.tg {
   text-transform: uppercase !important;
 }
 
@@ -478,49 +482,49 @@ tr {
 
 /* rtl:end:remove */
 
-.tg {
+.ty {
   --tk: 1;
   color: rgba(var(--tu), var(--tk)) !important;
 }
 
-.ty {
+.tb {
   --tk: 1;
   color: #6c757d !important;
 }
 
-.tb {
+.tw {
   --t_: 1;
   background-color: transparent !important;
 }
 
-.tw {
+.tx {
   border-radius: 50% !important;
 }
 @media (min-width: 768px) {
-  .tx, .q {
+  .tk, .q {
     flex-direction: row !important;
   }
-  .tk {
+  .t_ {
     margin-bottom: 1.5rem !important;
   }
-  .t_ {
+  .tj {
     margin-left: auto !important;
   }
-  .tj {
+  .tq {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
-  .tq {
+  .tz {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
-  .tz {
+  .ne {
     padding-top: 0 !important;
   }
-  .ne {
+  .nt {
     padding-top: 1.5rem !important;
   }
-  .nt {
+  .nn {
     padding-left: 1.5rem !important;
   }
    .q {
@@ -547,4 +551,12 @@ html, body {
 
 .address {
   color: #ffc107;
+}
+
+.suprachem-icon {
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
 }
