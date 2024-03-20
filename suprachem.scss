@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+
+//@import "node_modules/bootstrap/scss/bootstrap";
+
 //required bs
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+@import "node_modules/bootstrap/scss/maps";
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/utilities";
 
@@ -14,6 +20,8 @@ $nav-link-hover-color: $yellow;
 $link-decoration: none;
 
 $card-cap-bg: $white;
+
+$enable-dark-mode: false;
 
 //optional bs
 @import "node_modules/bootstrap/scss/root";
