@@ -7229,6 +7229,9 @@ html, body {
 .card-body-member img {
   max-height: 120px;
 }
+.card-body-member img.former-member {
+  max-height: 80px !important;
+}
 
 .address {
   color: #ffc107;

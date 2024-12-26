@@ -65,6 +65,9 @@ html, body {
   @extend .align-items-center;
   img{
     max-height: 120px;
+    &.former-member{
+      max-height: 80px !important;
+    }
   }
 }
 

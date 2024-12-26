@@ -9,11 +9,17 @@ xhr.onload = function () {
 
         let card_body = document.createElement('div');
         card_body.classList.add("card-body", "card-body-member");
+        if (s.loc=="former"){
+            card_body.classList.add("py-2");
+        }
 
         let div1 = document.createElement("div");
 
         let img = document.createElement("img");
         img.classList.add("img-fluid","rounded-circle");
+        if (s.loc=="former"){
+            img.classList.add("former-member");
+        }
         img.setAttribute("loading","lazy");
         img.setAttribute("alt", s.name);
         img.src=("img/members/" + s.img);

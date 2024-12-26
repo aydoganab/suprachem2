@@ -555,36 +555,41 @@ tr {
   padding-bottom: 0.25rem !important;
 }
 
+.tc {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
  .to {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
 
-.tc {
+.th {
   padding-top: 0.5rem !important;
 }
 
-.th {
+.tp {
   padding-right: 0.5rem !important;
 }
 
-.tp {
+.td {
   padding-bottom: 0 !important;
 }
 
-.td {
+.tv {
   font-weight: 300 !important;
 }
 
-.tv {
+.tm {
   text-align: right !important;
 }
 
-.tm, .address, .q, .to {
+.tg, .address, .q, .to {
   text-align: center !important;
 }
 
-.tg {
+.ty {
   text-transform: uppercase !important;
 }
 
@@ -592,49 +597,49 @@ tr {
 
 /* rtl:end:remove */
 
-.ty {
+.tb {
   --sc: 1;
   color: rgba(var(--ns), var(--sc)) !important;
 }
 
-.tb {
+.tw {
   --sc: 1;
   color: var(--nw) !important;
 }
 
-.tw {
+.tx {
   --sh: 1;
   background-color: transparent !important;
 }
 
-.tx {
+.tk {
   border-radius: 50% !important;
 }
 @media (min-width: 768px) {
-  .tk, .q {
+  .t_, .q {
     flex-direction: row !important;
   }
-  .t_ {
+  .tj {
     margin-bottom: 1.5rem !important;
   }
-  .tj {
+  .tq {
     margin-left: auto !important;
   }
-  .tq {
+  .tz {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
-  .tz {
+  .ne {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
   }
-  .ne {
+  .nt {
     padding-top: 0 !important;
   }
-  .nt {
+  .nn {
     padding-top: 1.5rem !important;
   }
-  .nn {
+  .nr {
     padding-left: 1.5rem !important;
   }
    .q {
@@ -657,6 +662,9 @@ html, body {
 
 .q img {
   max-height: 120px;
+}
+.q img.ni {
+  max-height: 80px !important;
 }
 
 .address {
